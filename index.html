@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>skill.landing</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="slick.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="slick.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="banner">
+			<h1>МЫ СОЗДАЁМ</h1>
+			<h1>КАЧЕСТВЕННЫЕ И ЭФФЕКТИВНЫЕ</h1>
+			<h1 class="brown">ЭЛЕКТРОННЫЕ КУРСЫ</h1>
+			<a href="">
+				<div class="button">
+					<span>Посмотреть видео</span>
+					<i class="fa fa-play-circle" aria-hidden="true"></i>
+				</div>
+			</a>
+		</div>
+		<div class="clients">
+			<div class="title">
+				<h1>Наши клиенты</h1>
+				<div class="border"></div>
+			</div>
+			<div class="carousel">
+				<ul class="slider-nav">
+					<li><img src="img/mac-hov.png" alt=""></li>
+					<li><img src="img/mixpanel-not.png" alt=""></li>
+					<li><img src="img/nuance-not.png" alt=""></li>
+					<li><img src="img/schlumberger-not.png" alt=""></li>
+					<li><img src="img/servicenow-not.png" alt=""></li>
+					<li><img src="img/rutgers-not.png" alt=""></li>
+				</ul>
+				<ul class="slider-for">
+					<li><img src="img/banner-1.png" alt=""></li>
+					<li><img src="img/banner-2.png" alt=""></li>
+					<li><img src="img/banner-3.png" alt=""></li>
+					<li><img src="img/banner-4.png" alt=""></li>
+					<li><img src="img/banner-1.png" alt=""></li>
+					<li><img src="img/banner-2.png" alt=""></li>
+				</ul>
+				<script>
+					$('.slider-nav').slick({
+						slidesToShow: 6,
+						asNavFor: '.slider-for',
+						centerMode: false,
+						focusOnSelect: true,
+						autoplay: true,
+						autoplaySpeed: 2000,
+						zIndex: 999
+					});
+					$('.slider-for').slick({
+						slidesToShow: 1,
+						slidesToScroll: 1,
+						arrows: true,
+						autoplay: true,
+						autoplaySpeed: 2000,
+						fade: true,
+						asNavFor: '.slider-nav',
+						zIndex: 99,
+						prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
+						nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
+					});
+				</script>
+			</div>
+		</div>
+	</div>
+</body>

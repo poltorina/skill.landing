@@ -1,0 +1,170 @@
+@font-face{
+	font-family: LatoBold;
+    src: url(font/LatoBold.ttf) format('truetype')
+}
+
+@font-face{
+	font-family: LatoRegular;
+    src: url(font/LatoRegular.ttf) format('truetype')
+}
+
+@font-face{
+	font-family: LatoLight;
+    src: url(font/LatoLight.ttf) format('truetype')
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+	font-family: "LatoBold";
+}
+
+.banner {
+	padding: 170px 0 0 10.5%;
+	height: 525px;
+	background: url(img/banner-bg.png) 50% no-repeat;
+	background-size: cover;
+}
+
+.banner h1 {
+	font-size: 38px;
+	color: rgb(253, 253, 253);
+	line-height: 1.2;
+	text-shadow: 1px 1px 2px #4c8103;
+}
+
+.banner .brown {
+	color: #2c4d00;
+	text-shadow: 1px 1px 2px #d0f49f;
+}
+
+.banner a {
+    position: relative;
+    top: 30px;
+    display: inline-block;
+}
+
+.banner a .button {
+	background-color: rgb(253, 253, 253);
+	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
+	width: 272px;
+	height: 54px;
+	border-radius: 50px;
+	font-size: 20px;
+	color: rgb(54, 62, 67);
+	padding: 7px 10px 7px 35px;
+}
+
+.banner a .button span {
+    top: 8px;
+    position: relative;
+}
+
+.banner a i {
+	float: right;
+	color: rgb(54, 62, 67);
+	font-size: 40px;
+}
+
+.clients {
+	padding: 100px 13%;
+}
+
+.clients .title {
+	position: relative;
+	text-align: center;
+    height: 62px;
+    margin-bottom: 10px;
+}
+
+.clients .title h1 {
+	font-size: 30px;
+	color: rgb(54, 62, 67);
+}
+
+.clients .title .border {
+	background-color: rgb(171, 220, 104);
+	position: absolute;
+	left: calc(50% - 20px);
+	top: 55px;
+	width: 40px;
+	height: 6px;
+    border-radius: 10px;
+}
+
+.slick-prev {
+    position: absolute;
+    display: inline-block;
+    left: -72px;
+    top: 254px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #fff;
+    outline: none;
+    border: 2px solid #363e43;
+    color: #363e43;
+    font-size: 20px;
+    padding: 7px 3px 6px 0;
+}
+
+.slick-next {
+    position: absolute;
+    display: inline-block;
+    right: -72px;
+    top: 254px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #fff;
+    outline: none;
+    border: 2px solid #363e43;
+    color: #363e43;
+    font-size: 20px;
+    padding: 7px 12px;
+}
+
+.clients .carousel {
+}
+
+.clients .carousel .slider-nav {
+	top: 21px;
+	z-index: 100;
+}
+
+.clients .carousel .slider-nav li {
+}
+
+.clients .carousel .slider-nav li img {
+}
+
+.clients .carousel .slider-for {
+	box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.clients .carousel .slider-for li {
+}
+
+.clients .carousel .slider-for li img {
+}
+
+.slick-current {
+  box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.08);
+}
+
+
+
