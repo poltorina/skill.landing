@@ -77,7 +77,7 @@ textarea:focus {
 }
 
 .banner {
-	padding: 170px 0 0 10.5%;
+	padding: 170px 25% 0 10.5%;
 	height: 525px;
 	background: url(img/banner-bg.png) 50% no-repeat;
 	background-size: cover;
@@ -161,6 +161,7 @@ textarea:focus {
 }
 
 .clients .carousel .slider-nav li img {
+	max-width: 100%;
 	margin: 0 auto;
 }
 
@@ -169,17 +170,17 @@ textarea:focus {
 }
 
 .clients .carousel .slider-for li {
-	max-width: 1015px;
-	max-height: 400px;
+
 }
 
 .clients .carousel .slider-for li img {
-	max-width: 100%;
-	max-height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 .solutions {
 	width: 100%;
+	max-height: 700px;
 	background-color: rgb(247, 251, 254);
     text-align: center;
     padding: 100px 4% 150px 11.5%;
@@ -195,6 +196,7 @@ textarea:focus {
 }
 
 .solutions .left-col img {
+	max-width: 100%;
     margin-top: 35px;
 }
 
@@ -229,7 +231,7 @@ textarea:focus {
 
 .solutions .right-col .solution-video {
 	width: 100%;
-	max-width: 610px;
+	max-width: 640px;
     margin: 25px auto 0;
     height: 0;
     padding-bottom: 56.25%;
@@ -258,6 +260,7 @@ textarea:focus {
 	display: inline-block;
 	width: 33.33%;
 	height: 100%;
+	vertical-align: top;
     margin-right: -4px;
 	text-align: center;
     padding-top: 45px;
@@ -352,11 +355,15 @@ textarea:focus {
 .cycle ul {
     max-width: 1014px;
     margin: 20px auto 0;
+    padding: 0 10px;
+    text-align: center;
 }
 
 .cycle ul li {
     display: inline-block;
     width: calc(33% - 34px);
+    max-width: 295px;
+    min-width: 210px;
     text-align: center;
     vertical-align: top;
 	background-color: rgb(253, 253, 253);
@@ -372,8 +379,13 @@ textarea:focus {
     position: absolute;
     width: 39px;
     height: 12px;
-    top: 192px;
+    top: 50%;
     z-index: 100;
+}
+
+.cycle ul li:first-child:before,
+.cycle ul li:last-child:after {
+    display: none;
 }
 
 .cycle ul li:before {
@@ -393,6 +405,8 @@ textarea:focus {
 }
 
 .cycle li div img {
+	max-width: 100%;
+	max-height: 100%;
 }
 
 .cycle li .num {
@@ -402,7 +416,7 @@ textarea:focus {
 
 
 .cycle li .num-info {
-    padding: 0 36px;
+    padding: 0 26px;
 	font-size: 20px;
 	color: rgb(79, 88, 94);
 	position: relative;
@@ -448,7 +462,7 @@ textarea:focus {
 }
 
 .forma {
-	padding: 100px 0;
+	padding: 100px 10px;
 }
 
 .forma .forma-block {
@@ -474,7 +488,9 @@ textarea:focus {
 }
 
 .forma form {
-	padding: 45px 14% 0;
+    max-width: 700px;
+    padding: 45px 7px 0;
+    margin: 0 auto;
 }
 
 .forma form .left-col {
@@ -541,8 +557,174 @@ textarea:focus {
 	color: rgb(255, 255, 255);
 	font-family: "LatoBlack";
     margin-top: 30px;
+    cursor: pointer;
 }
 
+
+
+/*@media screen and (max-width: 1920px) and (min-width: 1920px) {
+	.clients .carousel .slider-for li {
+		max-width: 1500px;
+		max-height: 500px;
+	}
+	.stat {
+		height: 250px;
+	}
+	.stat .stat-list li {
+		padding-top: 70px;
+	}
+	.stat li .num {
+		font-size: 100px;
+	}
+	.stat li .num-info {
+		top: -41px;
+    	font-size: 26px;
+	}
+	.cycle ul {
+		max-width: 73%;
+	}
+	.cycle ul li {
+    	width: calc(33% - 44px);
+		height: 540px;
+    	margin: 20px;
+	}
+	.cycle li div {
+    	height: 230px;
+    	margin: 50px 0;
+	}
+	.cycle li div img {
+		height: 100%;
+	}
+	.cycle li .num {
+		font-size: 150px;
+	}
+	.cycle li .num-info {
+		font-size: 31px;
+		top: -124px;
+	}
+
+}*/
+
+@media screen and (max-width: 1150px) {
+	.banner h1 {
+		font-size: 34px;
+	}
+	.cycle li .num-info {
+		padding: 0 17px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.banner {
+		padding: 135px 25% 0 10.5%;
+	}
+	.title h1 {
+		font-size: 28px;
+	}
+	.title .border {
+	    top: 45px;
+	}
+	.slick-arrow {
+		width: 34px;
+		height: 34px;
+		font-size: 16px;
+	}
+	.solutions .title h1 {
+	    font-size: 22px;
+	}
+	.solutions {
+		padding: 100px 3% 150px;
+	}
+	.solutions .left-col img {
+		margin-top: 20px;
+		width: 190px;
+	}
+	.solutions .left-col .button {
+		width: 200px;
+	    padding: 11px 21px 15px 8px;
+	    height: 45px;
+	    font-size: 19px;
+	}
+	.stat li .num {
+		font-size: 70px;
+	}
+	.stat li .num-info {
+		top: -33px;
+    	font-size: 18px;
+	}
+	.cycle ul li {
+		height: 350px;
+	}
+	.cycle li div {
+		height: 170px;
+    	margin: 35px 0 17px;
+	}
+	.cycle li .num {
+		font-size: 94px;
+	}
+	.cycle li .num-info {
+		padding: 0 12px;
+    	font-size: 16px;
+    	top: -73px;
+	}
+	.cycle li .num-info-one {
+	    top: -66px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.banner h1 {
+	    font-size: 32px;
+	}
+	.title h1 {
+		font-size: 26px;
+	}
+	.clients {
+	    padding: 80px 8%;
+	}
+	.slick-prev {
+	    left: -45px;
+	}
+	.slick-next {
+	    right: -45px;
+	}
+	.solutions {
+		padding: 80px 3%;
+		max-height: 1000px;
+	}
+	.solutions .left-col {
+	    padding-bottom: 90px;
+	}
+	.solutions .right-col {
+	    width: 100%;
+	}
+	.stat .stat-list li {
+		padding-top: 55px;
+	}
+	.stat li .num {
+		font-size: 56px;
+	}
+	.stat li .num-info {
+	    top: -25px;
+    	font-size: 14px;
+	}
+	.whale li p {
+		font-size: 17px;
+	}
+	.forma form .left-col,
+	.forma form .right-col {
+		width: 90%;
+	}
+	.forma .forma-block {
+		height: 460px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+}
+
+@media screen and (max-width: 320px) {
+}
 
 
 
