@@ -74,6 +74,61 @@ textarea:focus {
 	width: 100%;
 	height: 100%;
 	font-family: "LatoBold";
+	position: relative;
+}
+
+.header {
+	width: 100%;
+	height: 80px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 18px 4%;
+}
+
+.header .logo {
+	display: inline-block;
+}
+
+.header .logo a {
+}
+
+.header .logo img {
+	width: 95px;
+}
+
+.header .menu {
+	display: inline-block;
+    float: right;
+    position: relative;
+}
+
+.header .menu .button {
+	display: inline-block;
+	background-color: rgb(54, 62, 67);
+	width: 188px;
+	color: rgb(253, 253, 253);
+    padding: 15px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.header .menu .button span {
+}
+
+.header .lang {
+	display: inline-block;
+}
+
+.header .lang a {
+    margin-left: 15px;
+	font-size: 16px;
+	color: rgba(253, 253, 253, 0.4);
+}
+
+.header .lang a.active,
+.header .lang a:hover {
+	color: rgba(253, 253, 253, 1);
 }
 
 .banner {
@@ -126,12 +181,11 @@ textarea:focus {
 
 .slick-arrow {
     position: absolute;
-    display: inline-block;
     top: calc(50% - 19px);
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: transparent;
     outline: none;
     border: 2px solid #363e43;
     color: #363e43;
@@ -459,6 +513,77 @@ textarea:focus {
     margin: 15px auto 0;
 	font-size: 20px;
 	color: rgb(54, 62, 67);
+}
+
+.command {
+	padding: 100px 50px;
+}
+
+.command .slider-com {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.command .slick-arrow {
+  	border-color: rgb(171, 220, 104);
+  	color: rgb(171, 220, 104);
+}
+
+.command .parent-block {
+  width: 420px;
+}
+
+.command .child {
+  width: 420px;
+    margin-bottom: 10px;
+}
+
+.command .who {
+    height: 100px;
+}
+
+.command .who .name {
+	display: inline-block;
+    vertical-align: middle;
+    width: calc(50% - 65px);
+    text-align: right;
+	font-size: 18px;
+	color: rgb(54, 62, 67);
+    padding: 0 25px;
+}
+
+.command .who img {
+	display: inline-block;
+	vertical-align: middle;
+    position: relative;
+    top: 23px;
+}
+
+.command .who .position {
+	display: inline-block;
+	vertical-align: middle;
+    width: calc(50% - 65px);
+    text-align: center;
+	font-size: 14px;
+	color: rgb(137, 137, 137);
+	font-family: 'LatoBlack';
+    padding: 0 25px 0 0;
+}
+
+.command .who .position.two-line {
+    text-align: left;
+    padding: 0 25px;
+}
+
+.command .about {
+  background-color: rgb(247, 251, 254);
+  width: 420px;
+  height: 130px;
+  font-size: 15px;
+  color: rgb(77, 87, 93);
+  line-height: 1.714;
+  padding: 40px 10% 0;
+  left: 294.134px;
 }
 
 .forma {

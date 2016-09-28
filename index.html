@@ -7,12 +7,27 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="slick.css">
 	<link rel="stylesheet" href="style.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+	<script src="jquery-2.1.1.min.js"></script>
     <script src="slick.js"></script>
 	<script src="script.js"></script>
 </head>
 <body>
 	<div class="wrapper">
+		<div class="header">
+			<div class="logo"><a href=""><img src="img/logo.png" alt=""></a></div>
+			<div class="menu">
+				<a href="">
+					<div class="button"><span>Купить курс</span></div>
+				</a>
+				<div class="lang">
+					<a href="">ENG</a>
+					<a href="" class="active">РУС</a>
+					<a href="">DEU</a>
+					<a href="">POL</a>
+				</div>
+			</div>
+		</div>
 		<div class="banner">
 			<h1>МЫ СОЗДАЁМ</h1>
 			<h1>КАЧЕСТВЕННЫЕ И ЭФФЕКТИВНЫЕ</h1>
@@ -104,7 +119,7 @@
 					<div class="border"></div>
 				</div>
 				<div class="solution-video">
-					<iframe width="640" height="360" src="https://www.youtube.com/embed/UA5Hol3h3co?rel=0" frameborder="0" allowfullscreen></iframe>
+					<!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/UA5Hol3h3co?rel=0" frameborder="0" allowfullscreen></iframe> -->
 				</div>
 			</div>
 		</div>
@@ -203,6 +218,96 @@
 				</li>
 			</ul>
 		</div>
+		<div class="command">
+			<div class="title">
+				<h1>Команда профессионалов</h1>
+				<div class="border"></div>
+			</div>
+			<div class="slider-com">
+				<div class="parent-block">
+					<div class="child">
+						<div class="who">
+							<p class="name">Алексей Латышев</p>
+							<img src="img/pos-1.png" alt="">
+							<p class="position">CEO</p>
+						</div>
+						<div class="about">Sea te postea nominavi scriptorem. Sea ea dictas persequeris. Has aliquip neglegentur intellegebat eu. Ad mei soluta fabellas moderatius.</div>
+					</div>
+					<div class="child">
+						<div class="who">
+							<p class="name">Илона Тымчук</p>
+							<img src="img/pos-3.png" alt="">
+							<p class="position">SCRIPTWRITER</p>
+						</div>
+						<div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam qui quas quo fugit ducimus sint temporibus saepe voluptate pariatur harum.</div>
+					</div>
+				</div>
+				<div class="parent-block">
+					<div class="child">
+						<div class="who">
+							<p class="name">Павел Губаренко</p>
+							<img src="img/pos-2.png" alt="">
+							<p class="position two-line">PROJECT MANAGER</p>
+						</div>
+						<div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, ipsam provident aut debitis sequi repellat error incidunt porro.</div>
+					</div>
+					<div class="child">
+						<div class="who">
+							<p class="name">Николай Рудковский</p>
+							<img src="img/pos-4.png" alt="">
+							<p class="position two-line">VISUAL DESIGNER</p>
+						</div>
+						<div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, in earum, vel est quia sint?</div>
+					</div>
+				</div>
+				<div class="parent-block">
+					<div class="child">
+						<div class="who">
+							<p class="name">Алексей Латышев</p>
+							<img src="img/pos-1.png" alt="">
+							<p class="position">CEO</p>
+						</div>
+						<div class="about">Sea te postea nominavi scriptorem. Sea ea dictas persequeris. Has aliquip neglegentur intellegebat eu. Ad mei soluta fabellas moderatius.</div>
+					</div>
+					<div class="child">
+						<div class="who">
+							<p class="name">Илона Тымчук</p>
+							<img src="img/pos-3.png" alt="">
+							<p class="position">SCRIPTWRITER</p>
+						</div>
+						<div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam qui quas quo fugit ducimus sint temporibus saepe voluptate pariatur harum.</div>
+					</div>
+				</div>
+				<div class="parent-block">
+					<div class="child">
+						<div class="who">
+							<p class="name">Павел Губаренко</p>
+							<img src="img/pos-2.png" alt="">
+							<p class="position two-line">PROJECT MANAGER</p>
+						</div>
+						<div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, ipsam provident aut debitis sequi repellat error incidunt porro.</div>
+					</div>
+					<div class="child">
+						<div class="who">
+							<p class="name">Николай Рудковский</p>
+							<img src="img/pos-4.png" alt="">
+							<p class="position two-line">VISUAL DESIGNER</p>
+						</div>
+						<div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, in earum, vel est quia sint?</div>
+					</div>
+				</div>
+			</div>
+			<script>
+				$('.slider-com').slick({
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					// autoplay: true,
+					autoplaySpeed: 2000,
+					prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
+					nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
+				});
+			</script>
+		</div>
 		<div class="forma">
 			<div class="forma-block">
 				<h1>Доверьте нам обучение Ваших людей</h1>
@@ -261,7 +366,7 @@
 					<div class="border"></div>
 				</div>
 				<div class="solution-video">
-					<iframe width="640" height="360" src="https://www.youtube.com/embed/UA5Hol3h3co?rel=0" frameborder="0" allowfullscreen></iframe>
+					<!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/UA5Hol3h3co?rel=0" frameborder="0" allowfullscreen></iframe> -->
 				</div>
 			</div>
 		</div>
