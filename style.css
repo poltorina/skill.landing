@@ -190,6 +190,7 @@ textarea:focus {
     border: 2px solid #363e43;
     color: #363e43;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .slick-prev {
@@ -212,6 +213,11 @@ textarea:focus {
 
 .clients .carousel .slider-nav li {
 	text-align: center;
+}
+
+.clients .carousel .slider-nav li:focus {
+	border: none;
+	outline: none;
 }
 
 .clients .carousel .slider-nav li img {
@@ -516,7 +522,7 @@ textarea:focus {
 }
 
 .command {
-	padding: 100px 50px;
+	padding: 100px 50px 80px 80px;
 }
 
 .command .slider-com {
@@ -529,17 +535,22 @@ textarea:focus {
   	color: rgb(171, 220, 104);
 }
 
+.command .slick-next {
+    right: -45px;
+}
+
 .command .parent-block {
   width: 420px;
 }
 
 .command .child {
-  width: 420px;
-    margin-bottom: 10px;
+	width: 99%;
+	max-width: 420px;
+    margin: 0 auto 10px;
 }
 
 .command .who {
-    height: 100px;
+    height: 93px;
 }
 
 .command .who .name {
@@ -549,14 +560,14 @@ textarea:focus {
     text-align: right;
 	font-size: 18px;
 	color: rgb(54, 62, 67);
-    padding: 0 25px;
+    padding-right: 25px;
 }
 
 .command .who img {
 	display: inline-block;
 	vertical-align: middle;
     position: relative;
-    top: 23px;
+    top: 17px;
 }
 
 .command .who .position {
@@ -576,18 +587,19 @@ textarea:focus {
 }
 
 .command .about {
-  background-color: rgb(247, 251, 254);
-  width: 420px;
-  height: 130px;
+  /*background-color: rgb(247, 251, 254);*/
+  background-color: #000;
+  width: 100%;
+  height: 150px;
   font-size: 15px;
   color: rgb(77, 87, 93);
   line-height: 1.714;
-  padding: 40px 10% 0;
+  padding: 40px 11% 0;
   left: 294.134px;
 }
 
 .forma {
-	padding: 100px 10px;
+	padding: 0 10px 90px;
 }
 
 .forma .forma-block {
@@ -685,6 +697,131 @@ textarea:focus {
     cursor: pointer;
 }
 
+.footer {
+	position: relative;
+	width: 100%;
+	height: 200px;
+    padding: 0 10px;
+	background: url('img/footer-bg.png') 50% no-repeat;
+	background-size: cover;
+}
+
+.footer .contact {
+    max-width: 1014px;
+    height: 128px;
+    margin: 0 auto;
+    padding: 42px 0;
+}
+
+.footer .contact a {
+}
+
+.footer .logo {
+	display: inline-block;
+}
+
+.footer .logo img {
+    width: 95px;
+}
+
+.footer .contact ul {
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: 14px;
+}
+
+.footer .contact li {
+    display: inline-block;
+    margin-left: 70px;
+}
+
+.footer .contact li a {
+	font-size: 16px;
+	color: rgb(204, 214, 220);
+}
+
+.footer .div-tr {
+	display: inline-block;
+    vertical-align: middle;
+    margin-right: 9px;
+}
+
+.footer .tr-without {
+	margin-right: 0;
+}
+
+.footer .div-icon {
+	display: inline-block;
+	border-radius: 50%;
+	background-color: rgb(204, 214, 220);
+	width: 19px;
+	height: 19px;
+    vertical-align: middle;
+    margin-right: 9px;
+    padding: 3px 4px;
+    font-size: 14px;
+}
+
+.footer .div-icon i {
+	color: #262b2f;
+}
+
+.footer .contact li .fa-skype {
+    font-size: 20px;
+}
+
+.footer .contact li .fa-phone {
+}
+
+.footer .contact li .fa-youtube-play {
+	color: rgb(253, 253, 253);
+    font-size: 24px;
+}
+
+.footer .icon-text {
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.footer .copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 10px;
+	width: 100%;
+	height: 72px;
+	background-color: rgb(36, 41, 45);
+	box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.3);
+}
+
+.footer .copyright-block {
+    max-width: 1014px;
+    margin: 0 auto;
+}
+
+.footer .copyright p {
+	font-size: 15px;
+	color: rgb(204, 214, 220);
+	display: inline-block;
+}
+
+.footer .copyright ul {
+    display: inline-block;
+    float: right;
+    position: relative;
+}
+
+.footer .copyright li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.footer .copyright li a {
+	font-size: 16px;
+	color: rgb(253, 253, 253);
+}
+
 
 
 /*@media screen and (max-width: 1920px) and (min-width: 1920px) {
@@ -737,11 +874,16 @@ textarea:focus {
 	.cycle li .num-info {
 		padding: 0 17px;
 	}
+	.command .child {
+		/*width: 370px;*/
+	}
+
 }
 
 @media screen and (max-width: 900px) {
-	.banner {
-		padding: 135px 25% 0 10.5%;
+	.button {
+	    height: 45px;
+	    font-size: 19px;
 	}
 	.title h1 {
 		font-size: 28px;
@@ -753,6 +895,15 @@ textarea:focus {
 		width: 34px;
 		height: 34px;
 		font-size: 16px;
+	}
+	.header .menu .button {
+		padding: 11px;
+	}
+	.banner {
+		padding: 135px 25% 0 10.5%;
+	}
+	.banner a .button {
+		padding: 3px 10px 3px 35px;
 	}
 	.solutions .title h1 {
 	    font-size: 22px;
@@ -767,8 +918,6 @@ textarea:focus {
 	.solutions .left-col .button {
 		width: 200px;
 	    padding: 11px 21px 15px 8px;
-	    height: 45px;
-	    font-size: 19px;
 	}
 	.stat li .num {
 		font-size: 70px;
@@ -795,9 +944,25 @@ textarea:focus {
 	.cycle li .num-info-one {
 	    top: -66px;
 	}
+	.command {
+	    padding: 100px 50px 80px;
+	}
+	.command .slider-com {
+		width: 430px;
+	}
+	.command .slick-next {
+		right: -72px;
+	}
+	.footer .contact li {
+		margin-left: 15px;
+	}
 }
 
 @media screen and (max-width: 720px) {
+	.header .lang a {
+		font-size: 15px;
+		margin-left: 10px;
+	}
 	.banner h1 {
 	    font-size: 32px;
 	}
@@ -839,6 +1004,9 @@ textarea:focus {
 	.forma form .left-col,
 	.forma form .right-col {
 		width: 90%;
+	}
+	.forma form .right-col {
+		margin-top: 35px;
 	}
 	.forma .forma-block {
 		height: 460px;

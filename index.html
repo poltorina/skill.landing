@@ -7,8 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="slick.css">
 	<link rel="stylesheet" href="style.css">
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-	<script src="jquery-2.1.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="slick.js"></script>
 	<script src="script.js"></script>
 </head>
@@ -119,7 +118,7 @@
 					<div class="border"></div>
 				</div>
 				<div class="solution-video">
-					<!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/UA5Hol3h3co?rel=0" frameborder="0" allowfullscreen></iframe> -->
+					<iframe width="640" height="360" src="https://www.youtube.com/embed/UA5Hol3h3co?rel=0" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -239,7 +238,7 @@
 							<img src="img/pos-3.png" alt="">
 							<p class="position">SCRIPTWRITER</p>
 						</div>
-						<div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam qui quas quo fugit ducimus sint temporibus saepe voluptate pariatur harum.</div>
+						<div class="about">Sea te postea dolor sit amet, consectetur adipisicing elit. Veniam qui quas quo fugit ducimus sint temporibus saepe.</div>
 					</div>
 				</div>
 				<div class="parent-block">
@@ -249,7 +248,7 @@
 							<img src="img/pos-2.png" alt="">
 							<p class="position two-line">PROJECT MANAGER</p>
 						</div>
-						<div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, ipsam provident aut debitis sequi repellat error incidunt porro.</div>
+						<div class="about">Modus erant dolor sit amet, consectetur adipisicing elit. Magnam, ipsam provident aut debitis sequi repellat porro.</div>
 					</div>
 					<div class="child">
 						<div class="who">
@@ -257,7 +256,7 @@
 							<img src="img/pos-4.png" alt="">
 							<p class="position two-line">VISUAL DESIGNER</p>
 						</div>
-						<div class="about">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, in earum, vel est quia sint?</div>
+						<div class="about">Modus erant dolor sit amet, consectetur adipisicing elit. Quisquam, in earum, vel est quia sint?</div>
 					</div>
 				</div>
 				<div class="parent-block">
@@ -304,7 +303,16 @@
 					// autoplay: true,
 					autoplaySpeed: 2000,
 					prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
-					nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
+					nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
+	                responsive: [
+	                  {
+	                    breakpoint: 900,
+	                    settings: {
+	                      slidesToShow: 1,
+	                      slidesToScroll: 1
+	                    }
+	                  }
+	                ]
 				});
 			</script>
 		</div>
@@ -327,8 +335,48 @@
 				</form>
 			</div>
 		</div>
+		<div class="footer">
+			<div class="contact">
+				<a href=""><div class="logo"><img src="img/logo.png" alt=""></div></a>
+				<ul>
+					<li>
+						<a href="skype:">
+							<div class="div-tr"><i class="fa fa-skype" aria-hidden="true"></i></div>
+							<div class="icon-text">skype</div>
+						</a>
+					</li>
+					<li>
+						<a href="mailto:info@skill.im">
+							<div class="div-tr"><img src="img/mail-icon.png" alt=""></div>
+							<div class="icon-text">info@skill.im</div>
+						</a>
+					</li>
+					<li>
+						<a href="tel:+380930055111">
+							<div class="div-icon"><i class="fa fa-phone" aria-hidden="true"></i></div>
+							<div class="icon-text">(093) 005 51 11</div>
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<div class="div-tr tr-without"><i class="fa fa-youtube-play" aria-hidden="true"></i></div>
+							<div class="icon-text"></div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="copyright">
+				<div class="copyright-block">
+					<p>© 2014 Skill.im Все права защищены.</p>
+					<ul>
+						<li><a href="">Пункт 1</a></li>
+						<li><a href="">Пункт 2</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="wrapper">
+<!-- 	<div class="wrapper">
 		<div class="banner">
 			<h1>МЫ СОЗДАЁМ</h1>
 			<h1>КАЧЕСТВЕННЫЕ И ЭФФЕКТИВНЫЕ</h1>
@@ -366,7 +414,6 @@
 					<div class="border"></div>
 				</div>
 				<div class="solution-video">
-					<!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/UA5Hol3h3co?rel=0" frameborder="0" allowfullscreen></iframe> -->
 				</div>
 			</div>
 		</div>
@@ -484,5 +531,5 @@
 				</form>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </body>
