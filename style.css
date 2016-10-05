@@ -51,8 +51,8 @@ textarea:focus {
 .title {
 	position: relative;
 	text-align: center;
-    height: 62px;
-    margin-bottom: 10px;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .title h1 {
@@ -64,7 +64,7 @@ textarea:focus {
 	background-color: rgb(171, 220, 104);
 	position: absolute;
 	left: calc(50% - 20px);
-	top: 55px;
+	bottom: 0;
 	width: 40px;
 	height: 6px;
     border-radius: 10px;
@@ -879,9 +879,6 @@ textarea:focus {
 	.cycle li .num-info {
 		padding: 0 17px;
 	}
-	.command .child {
-		/*width: 370px;*/
-	}
 
 }
 
@@ -892,9 +889,6 @@ textarea:focus {
 	}
 	.title h1 {
 		font-size: 28px;
-	}
-	.title .border {
-	    top: 45px;
 	}
 	.slick-arrow {
 		width: 34px;
@@ -1033,6 +1027,9 @@ textarea:focus {
 	.banner h1 {
 	    font-size: 30px;
 	}
+	.title {
+		padding-bottom: 18px;
+	}
 	.title h1 {
 	    font-size: 24px;
 	}
@@ -1086,7 +1083,30 @@ textarea:focus {
 	}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
+	.banner {
+	    padding: 150px 10% 0;
+	    height: 480px;
+	}
+.banner h1 {
+    font-size: 27px;
+}
+.solutions .left-col {
+    width: 280px;
+}
+.clients,
+.solutions {
+    padding: 40px 3%;
+}
+.title h1 {
+	font-size: 22px;
+}
+.cycle,
+.whale,
+.command {
+    padding: 40px 0;
+}
+
 }
 
 
