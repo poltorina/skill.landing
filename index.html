@@ -93,7 +93,15 @@
 										$('.slider-nav .slick-current img').attr('src', activeImg);
         				},
 						prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>',
-						nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>'
+						nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>',
+		                responsive: [
+		                  {
+		                    breakpoint: 601,
+		                    settings: {
+	        					arrows: false
+		                    }
+		                  }
+		                ]
 					});
 				</script>
 			</div>
@@ -310,6 +318,14 @@
 	                    settings: {
 	                      slidesToShow: 1,
 	                      slidesToScroll: 1
+	                    }
+	                  },
+	                  {
+	                    breakpoint: 600,
+	                    settings: {
+	                      slidesToShow: 1,
+	                      slidesToScroll: 1,
+        				  arrows: false
 	                    }
 	                  }
 	                ]
