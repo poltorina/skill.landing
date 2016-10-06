@@ -46,6 +46,11 @@ textarea:focus {
 	height: 54px;
 	border-radius: 50px;
 	font-size: 20px;
+	box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
 }
 
 .title {
@@ -118,7 +123,13 @@ textarea:focus {
     text-align: center;
 }
 
-.header .menu .button span {
+.header .menu .button:hover {
+	background-color: rgba(9, 10, 11, 1);
+	box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
 }
 
 .header .lang {
@@ -159,14 +170,23 @@ textarea:focus {
     position: relative;
     top: 30px;
     display: inline-block;
+	color: rgb(54, 62, 67);
 }
 
 .banner a .button {
 	background-color: rgb(253, 253, 253);
 	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.15);
 	width: 272px;
-	color: rgb(54, 62, 67);
 	padding: 7px 10px 7px 35px;
+}
+
+.banner a .button:hover {
+	color: #000;
+	box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
 }
 
 .banner a .button span {
@@ -176,7 +196,6 @@ textarea:focus {
 
 .banner a i {
 	float: right;
-	color: rgb(54, 62, 67);
 	font-size: 40px;
 }
 
@@ -196,16 +215,33 @@ textarea:focus {
     color: #363e43;
     font-size: 20px;
     cursor: pointer;
+    line-height: 1px;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
+}
+
+.slick-arrow:hover {
+  	border-color: #000;
+  	color: #000;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
+}
+
+.slick-arrow i {
 }
 
 .slick-prev {
     left: -72px;
-    padding: 7px 3px 6px 0;
+    padding: 8px 3px 6px 0;
 }
 
 .slick-next {
     right: -72px;
-    padding: 7px 12px;
+    padding: 8px 12px;
 }
 
 .clients .carousel {
@@ -219,11 +255,6 @@ textarea:focus {
 .clients .carousel .slider-nav li {
 	text-align: center;
 }
-
-/*.clients .carousel .slider-nav li:focus {
-	border: none;
-	outline: none;
-}*/
 
 .clients .carousel .slider-nav li img {
 	max-width: 100%;
@@ -277,6 +308,15 @@ textarea:focus {
 	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2);
 	width: 212px;
     padding: 15px 21px 15px 8px;
+}
+
+.solutions .left-col .button:hover {
+	background-color: rgba(107, 184, 0, 1);
+	box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
 }
 
 .solutions .left-col .button span {
@@ -436,6 +476,18 @@ textarea:focus {
 	height: 396px;
 	margin: 15px;
 	position: relative;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
+}
+
+.cycle ul li:hover {
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15), 0px 0px 1px 0px rgba(0, 0, 1, 0.4), 0px 1px 18px 0px rgba(0, 0, 1, 0.2);
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
 }
 
 .cycle ul li:before,
@@ -538,6 +590,19 @@ textarea:focus {
 .command .slick-arrow {
   	border-color: rgb(171, 220, 104);
   	color: rgb(171, 220, 104);
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
+}
+
+.command .slick-arrow:hover {
+  	border-color: rgb(93, 161, 0);
+  	color: rgb(93, 161, 0);
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
 }
 
 .command .slick-next {
@@ -592,15 +657,27 @@ textarea:focus {
 }
 
 .command .about {
-  /*background-color: rgb(247, 251, 254);*/
-  background-color: #000;
-  width: 100%;
-  height: 150px;
-  font-size: 15px;
-  color: rgb(77, 87, 93);
-  line-height: 1.714;
-  padding: 40px 11% 0;
-  left: 294.134px;
+	background-color: rgb(247, 251, 254);
+	/*background-color: #000;*/
+	width: 100%;
+	height: 150px;
+	font-size: 15px;
+	color: rgb(77, 87, 93);
+	line-height: 1.714;
+	padding: 40px 11% 0;
+	left: 294.134px;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
+}
+
+.command .child:hover .about {
+	background-color: rgba(232, 244, 252, 1);
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
 }
 
 .forma {
@@ -615,6 +692,18 @@ textarea:focus {
 	margin: 0 auto;
 	text-align: center;
 	padding-top: 50px;
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
+}
+
+.forma .forma-block:hover {
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.08), 0px 0px 1px 0px rgba(0, 0, 1, 0.3), 0px 1px 18px 0px rgba(0, 0, 1, 0.15);
+    -webkit-transition: all 0.3s ease-out;
+       -moz-transition: all 0.3s ease-out;
+     	 -o-transition: all 0.3s ease-out;
+    		transition: all 0.3s ease-out;
 }
 
 .forma .forma-block h1 {
@@ -700,6 +789,7 @@ textarea:focus {
 	font-family: "LatoBlack";
     margin-top: 30px;
     cursor: pointer;
+    line-height: 1;
 }
 
 .footer {
@@ -739,6 +829,10 @@ textarea:focus {
 .footer .contact li {
     display: inline-block;
     margin-left: 70px;
+}
+
+.footer .contact li:hover a .icon-text {
+    color: #fff;
 }
 
 .footer .contact li a {
@@ -806,6 +900,7 @@ textarea:focus {
 }
 
 .footer .copyright p {
+	max-width: calc(100% - 145px);
 	font-size: 15px;
 	color: rgb(204, 214, 220);
 	display: inline-block;
@@ -822,11 +917,18 @@ textarea:focus {
     margin-left: 30px;
 }
 
+.footer .copyright li:first-child {
+	margin-left: 0;
+}
+
 .footer .copyright li a {
 	font-size: 16px;
 	color: rgb(253, 253, 253);
 }
 
+.footer .copyright li:hover a {
+    color: rgb(141, 198, 63);
+}
 
 
 /*@media screen and (max-width: 1920px) and (min-width: 1920px) {
@@ -1008,7 +1110,7 @@ textarea:focus {
 		margin-top: 35px;
 	}
 	.forma .forma-block {
-		height: 500px;
+		height: 520px;
 	}
 	.forma form input {
 		width: 67%;
@@ -1088,23 +1190,103 @@ textarea:focus {
 	    padding: 150px 10% 0;
 	    height: 480px;
 	}
-.banner h1 {
-    font-size: 27px;
+	.banner h1 {
+	    font-size: 27px;
+	}
+	.solutions .left-col {
+	    width: 280px;
+	}
+	.clients,
+	.solutions {
+	    padding: 40px 3%;
+	}
+	.title h1 {
+		font-size: 22px;
+	}
+	.cycle,
+	.whale,
+	.command {
+	    padding: 40px 0;
+	}
+	.command .slider-com {
+		max-width: 420px;
+		width: 100%;
+	}
+	.command .who {
+	    height: 85px;
+	}
+	.command .who .name {
+	    width: calc(50% - 54px);
+	    font-size: 17px;
+	    padding-right: 10px;
+	}
+	.command .who img {
+	    width: 100px;
+	    top: 20px;
+	}
+	.command .who .position {
+	    width: calc(50% - 54px);
+	    font-size: 13px;
+	    padding: 0 25px 0 0;
+	}
+	.command .about {
+	    height: auto;
+	    font-size: 14px;
+	    padding: 30px 8% 10px;
+	}
+	.command .who .position.two-line {
+	    padding: 0 25px 0 0;
+	}
+	.forma .forma-block {
+	    height: 450px;
+	    padding-top: 25px;
+	}
+	.forma .forma-block h1 {
+	    font-size: 20px;
+	}
+	.forma .forma-block>p {
+	    font-size: 14px;
+	    margin-top: 10px;
+	}
+	.forma form {
+	    padding: 30px 7px 0;
+	}
+	.forma form .left-col,
+	.forma form .right-col {
+	    width: 100%;
+	}
+	.forma form #p-top {
+	    margin-bottom: 20px;
+	}
+	.forma form p {
+	    font-size: 14px;
+	    width: 80px;
+	}
+	.forma form input {
+	    width: 66%;
+	    padding-bottom: 5px;
+	}
+	.forma form .right-col {
+	    margin-top: 20px;
+	}
+	.forma form textarea {
+	    margin-top: 10px;
+	    max-width: 90%;
+	    width: 90%;
+	    height: 70px;
+	}
+	.footer .contact ul {
+		padding-left: 0;
+	}
+.footer .contact li {
+    margin-left: 0;
+    width: calc(50% - 2px);
 }
-.solutions .left-col {
-    width: 280px;
+.footer .contact li a {
+    font-size: 15px;
 }
-.clients,
-.solutions {
-    padding: 40px 3%;
-}
-.title h1 {
-	font-size: 22px;
-}
-.cycle,
-.whale,
-.command {
-    padding: 40px 0;
+.footer .div-icon {
+    margin-right: 5px;
 }
 
 }
