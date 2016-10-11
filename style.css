@@ -24,6 +24,10 @@
     padding: 0;
 }
 
+body {
+	font-size: 20px;
+}
+
 a {
     text-decoration: none;
 }
@@ -45,7 +49,7 @@ textarea:focus {
 .button {
 	height: 54px;
 	border-radius: 50px;
-	font-size: 20px;
+	font-size: 1em;
 	box-shadow: 0px 0px 23px 0px rgba(0, 0, 0, 0.3);
     -webkit-transition: all 0.3s ease-out;
        -moz-transition: all 0.3s ease-out;
@@ -61,7 +65,7 @@ textarea:focus {
 }
 
 .title h1 {
-	font-size: 30px;
+	font-size: 1.5em;
 	color: rgb(54, 62, 67);
 }
 
@@ -91,6 +95,7 @@ textarea:focus {
 	width: 100%;
 	height: 80px;
 	position: absolute;
+    z-index: 2;
 	top: 0;
 	left: 0;
 	padding: 18px 4%;
@@ -137,7 +142,7 @@ textarea:focus {
 
 .header .lang a {
     margin-left: 15px;
-	font-size: 16px;
+	font-size: 0.8em;
 	color: rgba(253, 253, 253, 0.4);
 }
 
@@ -147,27 +152,46 @@ textarea:focus {
 }
 
 .banner {
-	padding: 170px 25% 0 10.5%;
-	height: 525px;
+	height: 520px;
 	background: url(img/banner-bg.png) 50% no-repeat;
 	background-size: cover;
+    overflow: hidden;
+}
+
+.banner .banner-child {
+	position: relative;
+	width: 80%;
+	max-width: 1024px;
+	padding-top: 135px;
+	margin: 0 auto;
+}
+
+.banner img {
+	position: absolute;
+	right: -125px;
+	top: 40px;
 }
 
 .banner h1 {
+    position: relative;
+    z-index: 1;
 	text-transform: uppercase;
-	font-size: 38px;
+	font-size: 45px;
+	font-size: 2.25em;
 	color: rgb(253, 253, 253);
 	line-height: 1.2;
-	text-shadow: 1px 1px 2px #4c8103;
+	text-shadow: 1px 1px 0 #2c4d00;
+	font-family: 'LatoBlack';
 }
 
 .banner .brown {
 	color: #2c4d00;
-	text-shadow: 1px 1px 2px #d0f49f;
+	text-shadow: 1px 1px 0 rgb(253, 253, 253);
 }
 
 .banner a {
     position: relative;
+    z-index: 1;
     top: 30px;
     display: inline-block;
 	color: rgb(54, 62, 67);
@@ -196,11 +220,14 @@ textarea:focus {
 
 .banner a i {
 	float: right;
-	font-size: 40px;
+	font-size: 2em;
 }
 
 .clients {
-	padding: 100px 13%;
+    padding: 100px 13%;
+    max-width: 1014px;
+    box-sizing: content-box;
+    margin: 0 auto;
 }
 
 .slick-arrow {
@@ -213,7 +240,7 @@ textarea:focus {
     outline: none;
     border: 2px solid #363e43;
     color: #363e43;
-    font-size: 20px;
+    font-size: 1em;
     cursor: pointer;
     line-height: 1px;
     -webkit-transition: all 0.3s ease-out;
@@ -277,17 +304,25 @@ textarea:focus {
 .solutions {
 	width: 100%;
 	max-height: 700px;
+	padding-bottom: 90px;
 	background-color: rgb(247, 251, 254);
     text-align: center;
-    padding: 100px 4% 150px 11.5%;
+    box-sizing: content-box;
+}
+
+.solutions .solutions-child {
+    padding: 100px 4% 150px;
+    max-width: 1014px;
+    box-sizing: content-box;
+    margin: 0 auto;
 }
 
 .solutions .title h1 {
-	font-size: 26px;
+	font-size: 1.3em;
 }
 
 .solutions .left-col {
-    width: 350px;
+    width: 330px;
     display: inline-block;
 }
 
@@ -330,13 +365,14 @@ textarea:focus {
 
 .solutions .right-col {
     display: inline-block;
-    width: calc(100% - 354px);
+    width: calc(100% - 335px);
     vertical-align: top;
+    padding-left: 65px;
 }
 
 .solutions .right-col .solution-video {
 	width: 100%;
-	max-width: 640px;
+	max-width: 600px;
     margin: 25px auto 0;
     height: 0;
     padding-bottom: 56.25%;
@@ -353,8 +389,11 @@ textarea:focus {
 }
 
 .stat {
+	max-width: 1014px;
 	height: 180px;
 	position: relative;
+	margin: 0 auto;
+	top: -90px;
 }
 
 .stat .stat-list {
@@ -366,7 +405,7 @@ textarea:focus {
 	width: 33.33%;
 	height: 100%;
 	vertical-align: top;
-    margin-right: -4px;
+    margin-right: -5px;
 	text-align: center;
     padding-top: 45px;
 }
@@ -388,7 +427,7 @@ textarea:focus {
 
 .stat li .num {
 	/*display: none;*/
-	font-size: 80px;
+	font-size: 4em;
 	color: rgb(253, 253, 253);
 	line-height: 1.2;
 	-moz-transform: matrix( 0.95896426912369,0,0,0.96447690096283,0,0);
@@ -400,7 +439,7 @@ textarea:focus {
 	/*display: none;*/
     position: relative;
     top: -35px;
-	font-size: 20px;
+	font-size: 1em;
 	color: rgb(191, 235, 131);
 	text-shadow:
 			-2px -2px 2px rgba(36, 41, 45, 1),
@@ -412,53 +451,12 @@ textarea:focus {
 	-ms-transform: matrix( 0.97446385615621,0,0,0.98006558778742,0,0);
 }
 
-.stat li .num-hide {
-	display: none;
-    position: relative;
-    top: -38px;
-	font-size: 20px;
-	color: rgba(36, 41, 45, 0.9);
-	text-shadow: 0px -3px 0px rgba(36, 41, 45, 0.9);
-    text-shadow: 2px 2px 3px rgba(1, 1, 1, 1);
-	-moz-transform: matrix( 0.97446385615621,0,0,0.98006558778742,0,0);
-	-webkit-transform: matrix( 0.97446385615621,0,0,0.98006558778742,0,0);
-	-ms-transform: matrix( 0.97446385615621,0,0,0.98006558778742,0,0);
-}
-
-.stat li .num-hidee {
-	display: none;
-    position: relative;
-    top: -62px;
-    left: 2px;
-	font-size: 20px;
-	color: rgba(36, 41, 45, 0.9);
-	text-shadow: 0px -3px 0px rgba(36, 41, 45, 0.9);
-    text-shadow: -2px 2px 3px rgba(1, 1, 1, 1);
-	-moz-transform: matrix( 0.97446385615621,0,0,0.98006558778742,0,0);
-	-webkit-transform: matrix( 0.97446385615621,0,0,0.98006558778742,0,0);
-	-ms-transform: matrix( 0.97446385615621,0,0,0.98006558778742,0,0);
-}
-
-.stat li .num-hideee {
-	display: none;
-    position: relative;
-    top: -85px;
-    left: 2px;
-	font-size: 20px;
-	color: rgba(36, 41, 45, 0.9);
-	text-shadow: 0px -3px 0px rgba(36, 41, 45, 0.9);
-    text-shadow: 2px 2px 3px rgba(1, 1, 1, 1);
-	-moz-transform: matrix( 0.97446385615621,0,0,0.98006558778742,0,0);
-	-webkit-transform: matrix( 0.97446385615621,0,0,0.98006558778742,0,0);
-	-ms-transform: matrix( 0.97446385615621,0,0,0.98006558778742,0,0);
-}
-
 .cycle {
-    padding: 100px 0 70px;
+    padding: 10px 0 70px;
 }
 
 .cycle ul {
-    max-width: 1014px;
+    max-width: 1084px;
     margin: 20px auto 0;
     padding: 0 10px;
     text-align: center;
@@ -467,7 +465,7 @@ textarea:focus {
 .cycle ul li {
     display: inline-block;
     width: calc(33% - 34px);
-    max-width: 295px;
+    max-width: 318px;
     min-width: 210px;
     text-align: center;
     vertical-align: top;
@@ -527,14 +525,15 @@ textarea:focus {
 }
 
 .cycle li .num {
-	font-size: 105px;
+	font-size: 5.25em;
 	color: rgb(214, 242, 176);
 }
 
 
 .cycle li .num-info {
-    padding: 0 26px;
-	font-size: 20px;
+    margin: 0 auto;
+    max-width: 229px;
+	font-size: 1em;
 	color: rgb(79, 88, 94);
 	position: relative;
 	top: -86px;
@@ -574,12 +573,12 @@ textarea:focus {
 .whale li p {
     max-width: 250px;
     margin: 15px auto 0;
-	font-size: 20px;
+	font-size: 1em;
 	color: rgb(54, 62, 67);
 }
 
 .command {
-	padding: 100px 50px 80px 80px;
+	padding: 100px 60px 80px;
 }
 
 .command .slider-com {
@@ -605,8 +604,12 @@ textarea:focus {
     		transition: all 0.3s ease-out;
 }
 
+.command .slick-prev {
+    left: -60px;
+}
+
 .command .slick-next {
-    right: -45px;
+    right: -60px;
 }
 
 .command .parent-block {
@@ -626,9 +629,9 @@ textarea:focus {
 .command .who .name {
 	display: inline-block;
     vertical-align: middle;
-    width: calc(50% - 65px);
+    width: calc(50% - 66px);
     text-align: right;
-	font-size: 18px;
+	font-size: 0.9em;
 	color: rgb(54, 62, 67);
     padding-right: 25px;
 }
@@ -643,7 +646,7 @@ textarea:focus {
 .command .who .position {
 	display: inline-block;
 	vertical-align: middle;
-    width: calc(50% - 65px);
+    width: calc(50% - 66px);
     text-align: center;
 	font-size: 14px;
 	color: rgb(137, 137, 137);
@@ -658,7 +661,6 @@ textarea:focus {
 
 .command .about {
 	background-color: rgb(247, 251, 254);
-	/*background-color: #000;*/
 	width: 100%;
 	height: 150px;
 	font-size: 15px;
@@ -707,19 +709,19 @@ textarea:focus {
 }
 
 .forma .forma-block h1 {
-	font-size: 24px;
+	font-size: 1.2em;
 	color: rgb(54, 62, 67);
 	font-family: 'LatoBlack';
 }
 
 .forma .forma-block>p {
-	font-size: 15px;
+	font-size: 0.75em;
 	color: rgb(155, 164, 170);
     margin-top: 15px;
 }
 
 .forma form {
-    max-width: 700px;
+    max-width: 780px;
     padding: 45px 7px 0;
     margin: 0 auto;
 }
@@ -729,6 +731,7 @@ textarea:focus {
     display: inline-block;
     vertical-align: top;
     text-align: left;
+    padding-left: 20px;
 }
 
 .forma form p {
@@ -738,43 +741,53 @@ textarea:focus {
     margin-right: 5px;
     display: inline-block;
 	font-family: 'LatoBlack';
+    padding-top: 12px;
 }
 
 .forma form #p-top {
-    margin-bottom: 40px;
+    margin-bottom: 27px;
 }
 
 .forma form input {
-    max-width: calc(100% - 84px);
-    vertical-align: text-bottom;
+	height: 34px;
+    vertical-align: top;
     width: 65%;
-    border-bottom: 1px solid rgb(204, 214, 220);
+	background-color: rgb(253, 253, 253);
+    border: 1px solid rgb(204, 214, 220);
 	font-size: 14px;
 	color: rgb(36, 41, 45);
 	font-family: "LatoBlack";
-    padding-bottom: 5px;
+    padding: 5px 10px;
 }
 
+.forma form #phone {
+    margin-top: 8px;
+}
 
 .forma form .right-col {
     width: calc(50% - 4px);
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.forma form .right-col p {
+    width: auto;
+	margin-right: 15px;
 }
 
 .forma form textarea {
-    max-width: calc(100% - 84px);
     vertical-align: top;
-    width: 68.5%;
-    border-bottom: 1px solid rgb(204, 214, 220);
+    width: 65%;
+	background-color: rgb(253, 253, 253);
+    border: 1px solid rgb(204, 214, 220);
 	resize: none;
 	font-size: 14px;
 	color: rgb(36, 41, 45);
 	font-family: "LatoBlack";
-    padding-bottom: 5px;
-    height: 92px;
+    padding: 5px 10px;
+    height: 98px;
 }
 
 .forma form .button {
@@ -799,6 +812,7 @@ textarea:focus {
     padding: 0 10px;
 	background: url('img/footer-bg.png') 50% no-repeat;
 	background-size: cover;
+	font-family: 'LatoRegular';
 }
 
 .footer .contact {
@@ -823,7 +837,7 @@ textarea:focus {
     display: inline-block;
     float: right;
     position: relative;
-    top: 14px;
+    top: 12px;
 }
 
 .footer .contact li {
@@ -833,6 +847,10 @@ textarea:focus {
 
 .footer .contact li:hover a .icon-text {
     color: #fff;
+}
+
+.footer .contact li:first-child {
+	margin-left: 0;
 }
 
 .footer .contact li a {
@@ -846,8 +864,8 @@ textarea:focus {
     margin-right: 9px;
 }
 
-.footer .tr-without {
-	margin-right: 0;
+.footer .contact li .tr-without {
+	color: rgb(253, 253, 253);
 }
 
 .footer .div-icon {
@@ -857,20 +875,18 @@ textarea:focus {
 	width: 19px;
 	height: 19px;
     vertical-align: middle;
-    margin-right: 9px;
+    margin-right: 8px;
     padding: 3px 4px;
     font-size: 14px;
 }
 
 .footer .div-icon i {
 	color: #262b2f;
+	font-size: 14px;
 }
 
 .footer .contact li .fa-skype {
-    font-size: 20px;
-}
-
-.footer .contact li .fa-phone {
+	font-size: 20px;
 }
 
 .footer .contact li .fa-youtube-play {
@@ -892,125 +908,52 @@ textarea:focus {
 	height: 72px;
 	background-color: rgb(36, 41, 45);
 	box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.3);
-}
-
-.footer .copyright-block {
-    max-width: 1014px;
-    margin: 0 auto;
-}
-
-.footer .copyright p {
-	max-width: calc(100% - 145px);
+	text-align: center;
 	font-size: 15px;
 	color: rgb(204, 214, 220);
-	display: inline-block;
 }
-
-.footer .copyright ul {
-    display: inline-block;
-    float: right;
-    position: relative;
-}
-
-.footer .copyright li {
-    display: inline-block;
-    margin-left: 30px;
-}
-
-.footer .copyright li:first-child {
-	margin-left: 0;
-}
-
-.footer .copyright li a {
-	font-size: 16px;
-	color: rgb(253, 253, 253);
-}
-
-.footer .copyright li:hover a {
-    color: rgb(141, 198, 63);
-}
-
-
-/*@media screen and (max-width: 1920px) and (min-width: 1920px) {
-	.clients .carousel .slider-for li {
-		max-width: 1500px;
-		max-height: 500px;
-	}
-	.stat {
-		height: 250px;
-	}
-	.stat .stat-list li {
-		padding-top: 70px;
-	}
-	.stat li .num {
-		font-size: 100px;
-	}
-	.stat li .num-info {
-		top: -41px;
-    	font-size: 26px;
-	}
-	.cycle ul {
-		max-width: 73%;
-	}
-	.cycle ul li {
-    	width: calc(33% - 44px);
-		height: 540px;
-    	margin: 20px;
-	}
-	.cycle li div {
-    	height: 230px;
-    	margin: 50px 0;
-	}
-	.cycle li div img {
-		height: 100%;
-	}
-	.cycle li .num {
-		font-size: 150px;
-	}
-	.cycle li .num-info {
-		font-size: 31px;
-		top: -124px;
-	}
-
-}*/
 
 @media screen and (max-width: 1150px) {
-	.banner h1 {
-		font-size: 34px;
+	.banner .banner-child {
+    	padding-top: 150px;
 	}
-	.cycle li .num-info {
-		padding: 0 17px;
+	.banner h1 {
+    	font-size: 2em;
+	}
+	.banner img {
+		width: 500px;
+		top: 60px;
 	}
 
 }
 
 @media screen and (max-width: 900px) {
+	body {
+		font-size: 17px;
+	}
 	.button {
 	    height: 45px;
-	    font-size: 19px;
 	}
 	.title h1 {
-		font-size: 28px;
 	}
 	.slick-arrow {
 		width: 34px;
 		height: 34px;
-		font-size: 16px;
 	}
 	.header .menu .button {
-		padding: 11px 25px;
+		padding: 13px 25px;
 	}
-	.banner {
-		padding: 135px 25% 0 10.5%;
+	.banner img {
+	    right: -175px;
 	}
 	.banner a .button {
-		padding: 3px 10px 3px 35px;
+		padding: 5px 10px 3px 35px;
 	}
-	.solutions .title h1 {
-	    font-size: 22px;
+	.slick-prev {
+	    padding: 7px 2px 6px 0;
 	}
-	.solutions {
-		padding: 100px 3% 150px;
+	.slick-next {
+	    padding: 7px 11px;
 	}
 	.solutions .left-col img {
 		margin-top: 20px;
@@ -1018,14 +961,13 @@ textarea:focus {
 	}
 	.solutions .left-col .button {
 		width: 200px;
-	    padding: 11px 21px 15px 8px;
+	    padding: 13px 21px 10px 8px;
 	}
-	.stat li .num {
-		font-size: 70px;
+	.stat .stat-list li {
+		padding-top: 53px;
 	}
 	.stat li .num-info {
-		top: -33px;
-    	font-size: 18px;
+		top: -30px;
 	}
 	.cycle ul li {
 		height: 350px;
@@ -1034,11 +976,8 @@ textarea:focus {
 		height: 170px;
     	margin: 35px 0 17px;
 	}
-	.cycle li .num {
-		font-size: 94px;
-	}
 	.cycle li .num-info {
-		padding: 0 12px;
+		width: 183px;
     	font-size: 16px;
     	top: -73px;
 	}
@@ -1061,14 +1000,11 @@ textarea:focus {
 
 @media screen and (max-width: 720px) {
 	.header .lang a {
-		font-size: 15px;
 		margin-left: 10px;
 	}
-	.banner h1 {
-	    font-size: 32px;
-	}
-	.title h1 {
-		font-size: 26px;
+	.banner img {
+	    width: 400px;
+	    top: 75px;
 	}
 	.clients {
 	    padding: 80px 8%;
@@ -1080,42 +1016,59 @@ textarea:focus {
 	    right: -45px;
 	}
 	.solutions {
-		padding: 80px 3%;
 		max-height: 1000px;
+	}
+	.solutions .solutions-child {
+		padding: 70px 4% 100px;
 	}
 	.solutions .left-col {
 	    padding-bottom: 90px;
 	}
 	.solutions .right-col {
 	    width: 100%;
+	    padding-left: 0;
 	}
 	.stat .stat-list li {
 		padding-top: 55px;
 	}
 	.stat li .num {
-		font-size: 56px;
+	    font-size: 3.7em;
 	}
 	.stat li .num-info {
-	    top: -25px;
-    	font-size: 14px;
+	    top: -28px;
+    	font-size: 0.9em;
 	}
-	.whale li p {
-		font-size: 17px;
+	.whale {
+	    padding: 70px 0;
+	}
+	.command {
+	    padding: 70px 50px;
+	}
+	.forma .forma-block {
+		height: 500px;
 	}
 	.forma form .left-col,
 	.forma form .right-col {
 		width: 90%;
+		padding-left: 10px;
 	}
 	.forma form .right-col {
-		margin-top: 35px;
+		margin-top: 30px;
 	}
-	.forma .forma-block {
-		height: 520px;
+	.forma form .right-col p {
+        width: 95px;
+	    margin-right: 5px;
 	}
-	.forma form input {
-		width: 67%;
+	.footer .contact li {
+	    margin-left: 10px;
 	}
-
+	.footer .div-tr,
+	.footer .div-icon {
+	    margin-right: 3px;
+	}
+	.footer .contact li a {
+	    font-size: 15px;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -1123,11 +1076,11 @@ textarea:focus {
 		display: block;
 		margin-top: 15px;
 	}
-	.banner {
-	    padding: 150px 25% 0 10.5%;
-	}
 	.banner h1 {
-	    font-size: 30px;
+	    font-size: 32px;
+	}
+	.banner img {
+    	right: -240px;
 	}
 	.title {
 		padding-bottom: 18px;
@@ -1150,11 +1103,17 @@ textarea:focus {
 	    padding-top: 20px;
 	    margin-top: 1px;
 	}
+	.whale ul {
+	    margin: 30px auto 0;
+	}
 	.whale li {
 		width: 100%;
 	}
+	.whale li p {
+		margin: 0 auto 15px;
+	}
 	.command {
-	    padding: 100px 0px 80px;
+	    padding: 70px 0px;
 	}
 	.footer {
 	    height: 250px;
@@ -1168,26 +1127,20 @@ textarea:focus {
 	    top: 25px;
 	    text-align: left;
 	    float: none;
-    	padding-left: 40px;
+    	padding-left: 50px;
 	}
 	.footer .contact li {
-	    margin-bottom: 10px; 
+	    margin: 0 0 10px; 
 	    width: calc(50% - 20px);
-	}
-	.footer .copyright {
-		text-align: left;
-	}
-	.footer .copyright p {
-		font-size: 14px;
-	}
-	.footer .copyright li {
-	    margin-left: 20px;
 	}
 }
 
 @media screen and (max-width: 450px) {
+	.title h1,
+	.solutions .title h1 {
+		font-size: 20px;
+	}
 	.banner {
-	    padding: 150px 10% 0;
 	    height: 480px;
 	}
 	.banner h1 {
@@ -1197,11 +1150,8 @@ textarea:focus {
 	    width: 280px;
 	}
 	.clients,
-	.solutions {
+	.solutions .solutions-child {
 	    padding: 40px 3%;
-	}
-	.title h1 {
-		font-size: 22px;
 	}
 	.cycle,
 	.whale,
@@ -1216,7 +1166,7 @@ textarea:focus {
 	    height: 85px;
 	}
 	.command .who .name {
-	    width: calc(50% - 54px);
+	    width: calc(50% - 55px);
 	    font-size: 17px;
 	    padding-right: 10px;
 	}
@@ -1225,13 +1175,11 @@ textarea:focus {
 	    top: 20px;
 	}
 	.command .who .position {
-	    width: calc(50% - 54px);
-	    font-size: 13px;
+	    width: calc(50% - 55px);
 	    padding: 0 25px 0 0;
 	}
 	.command .about {
 	    height: auto;
-	    font-size: 14px;
 	    padding: 30px 8% 10px;
 	}
 	.command .who .position.two-line {
@@ -1241,11 +1189,7 @@ textarea:focus {
 	    height: 450px;
 	    padding-top: 25px;
 	}
-	.forma .forma-block h1 {
-	    font-size: 20px;
-	}
 	.forma .forma-block>p {
-	    font-size: 14px;
 	    margin-top: 10px;
 	}
 	.forma form {
@@ -1259,36 +1203,27 @@ textarea:focus {
 	    margin-bottom: 20px;
 	}
 	.forma form p {
-	    font-size: 14px;
 	    width: 80px;
 	}
 	.forma form input {
-	    width: 66%;
+	    width: calc(100% - 90px);
 	    padding-bottom: 5px;
 	}
 	.forma form .right-col {
-	    margin-top: 20px;
+	    margin-top: 15px;
 	}
 	.forma form textarea {
 	    margin-top: 10px;
-	    max-width: 90%;
-	    width: 90%;
+	    width: 100%;
 	    height: 70px;
 	}
 	.footer .contact ul {
 		padding-left: 0;
 	}
-.footer .contact li {
-    margin-left: 0;
-    width: calc(50% - 2px);
-}
-.footer .contact li a {
-    font-size: 15px;
-}
-.footer .div-icon {
-    margin-right: 5px;
-}
-
+	.footer .contact li {
+	    margin-left: 0;
+	    width: calc(50% - 4px);
+	}
 }
 
 
