@@ -333,19 +333,22 @@
 			<div class="forma-block">
 				<h1>Доверьте нам обучение Ваших людей</h1>
 				<p>Оставьте Ваши контактные данные и мы обязательно с Вами свяжемся</p>
-				<form action="">
+				<form action="mail.php" id="form">
 					<div class="left-col">
 						<p id="p-top">ИМЯ</p>
-						<input type="text" id="name">
+						<input type="text" id="name" name="name" required="required">
 						<p>ТЕЛЕФОН или E-MAIL</p>
-						<input type="text" id="phone">					
+						<input type="text" id="phone" name="phone" required="required">					
 					</div>
 					<div class="right-col">
 						<p>СООБЩЕНИЕ</p>	
-						<textarea name=""></textarea>					
+						<textarea name="message" id="message" required="required"></textarea>					
 					</div>
 						<input type="submit" value="Отправить" class="button">	
 				</form>
+				<div class="after-form">
+					<p>Спасибо! Ваша заявка принята!</p>
+				</div>
 			</div>
 		</div>
 		<div class="footer">

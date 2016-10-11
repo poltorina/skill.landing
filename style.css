@@ -805,6 +805,10 @@ textarea:focus {
     line-height: 1;
 }
 
+.forma .after-form {
+    display: none;
+}
+
 .footer {
 	position: relative;
 	width: 100%;
