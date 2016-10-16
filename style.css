@@ -281,6 +281,7 @@ textarea:focus {
 
 .clients .carousel .slider-nav li {
 	text-align: center;
+    cursor: pointer;
 }
 
 .clients .carousel .slider-nav li img {
@@ -326,7 +327,7 @@ textarea:focus {
     display: inline-block;
 }
 
-.solutions .left-col img {
+.solutions .left-col .solution-img {
 	max-width: 100%;
     margin-top: 35px;
 }
@@ -357,9 +358,9 @@ textarea:focus {
     padding: 0 23px;
 }
 
-.solutions .left-col .button i {
+.solutions .left-col .button img {
 	float: right;
-    top: 1px;
+    top: 5px;
     position: relative;
 }
 
@@ -426,7 +427,7 @@ textarea:focus {
 }
 
 .stat li .num {
-	/*display: none;*/
+    font-family: 'LatoBlack';
 	font-size: 4em;
 	color: rgb(253, 253, 253);
 	line-height: 1.2;
@@ -436,7 +437,6 @@ textarea:focus {
 }
 
 .stat li .num-info {
-	/*display: none;*/
     position: relative;
     top: -35px;
 	font-size: 1em;

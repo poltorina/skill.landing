@@ -1,8 +1,16 @@
-$(document).ready(function() {
-	var imgHeight = $('.clients .carousel .slider-nav img').height();
-	imgHeight = imgHeight / 4.57;
-	$('.clients .carousel .slider-nav').css('top', imgHeight + 'px');
+window.onload = resizeDiv;
+window.addEventListener('resize', function(){
+    return resizeDiv();
+}, true);
 
+
+function resizeDiv(){
+    var imgHeight = $('.clients .carousel .slider-nav img').height();
+    imgHeight = imgHeight / 4.57;
+    $('.clients .carousel .slider-nav').css('top', imgHeight + 'px');
+}
+
+$(document).ready(function() {
     $("#form").submit(function(){
         var form = $(this);
         var error = false;
@@ -35,5 +43,4 @@ $(document).ready(function() {
         }
         return false;
     })
-
 })
